@@ -20,7 +20,10 @@ namespace Crud_Back.Repository
 
         public async Task<Student> GetStudentById(int id)
         {
-            return await _context.Students.FirstOrDefaultAsync(x => x.Id == id);
+            var test= await _context.Students.FirstOrDefaultAsync(x => x.Id == id);
+            if (test == null)
+                return null;
+            return test;
         }
 
         public async Task<Student> AddStudent(Student student)
