@@ -13,14 +13,14 @@ namespace Crud_Back.Models
         //[MaxLength(50, ErrorMessage = "Mbiemri nuk mund të jetë më i gjatë se 50 karaktere.")]
         //[MinLength(2, ErrorMessage = "Mbiemri nuk mund të jetë më i shkurt se 2 karaktere.")]
         public string? LastName { get; set; }
-        [Required(ErrorMessage = "Username është i detyrueshëm.")]
-        [MaxLength(50, ErrorMessage = "Username nuk mund të jetë më i gjatë se 50 karaktere.")]
-        [MinLength(2, ErrorMessage = "Username nuk mund të jetë më i shkurt se 2 karaktere.")]
-        public string UserName { get; set; }
+        //[Required(ErrorMessage = "Username është i detyrueshëm.")]
+        //[MaxLength(50, ErrorMessage = "Username nuk mund të jetë më i gjatë se 50 karaktere.")]
+        //[MinLength(2, ErrorMessage = "Username nuk mund të jetë më i shkurt se 2 karaktere.")]
+        public string? UserName { get; set; }
 
         public DateTime CreationDate { get; set; }= DateTime.Now;
-        [Required(ErrorMessage = "Passwordi është i detyrueshëm.")]
-        public string Password { get; set; }
+        //[Required(ErrorMessage = "Passwordi është i detyrueshëm.")]
+        public string? Password { get; set; }
        
       
     }
